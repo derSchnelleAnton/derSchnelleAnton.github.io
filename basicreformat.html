@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Reformat</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Buttons -->
+  <div class="button-wrapper">
+    <div class="heading">Basic Reformat</div>
+    <form>
+      <label>
+        <input type="radio" name="option" value="c"> Clean
+      </label>
+      <label>
+        <input type="radio" name="option" value="f" checked> Format
+      </label>
+    </form>
+    <button id="buttonGo">Go</button>
+    <button id="buttonCopy">Copy</button>
+  </div>
+
+  <!-- Text Areas -->
+  <div class="text-wrapper">
+    <textarea id="textInput" placeholder="Input"></textarea>
+    <textarea id="textOutput" placeholder="Output"></textarea>
+  </div>
+
+  <!-- Table with Stats -->
+  <table>
+    <tbody>
+      <tr>
+        <td>Character count</td>
+        <td>
+          <input id="inputCharCount" type="text" maxlength="1" placeholder="All" style="width: 20px; text-align: center;">
+        </td>
+        <td>
+          <div id="outputCharCount" class="stat">0</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Even 1</td>
+        <td>
+          <input id="inputEven1" type="text" maxlength="1" placeholder="'" style="width: 20px; text-align: center;">
+        </td>
+        <td>
+          <div id="outputEven1" class="stat">〜</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Even 2</td>
+        <td>
+          <input id="inputEven2" type="text" maxlength="1" placeholder="''" style="width: 20px; text-align: center;">
+        </td>
+        <td>
+          <div id="outputEven2" class="stat">〜</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Symmetrical 1</td>
+        <td>
+          <input id="inputSymmetrical1" type="text" maxlength="2" placeholder="()" style="width: 20px; text-align: center;">
+        </td>
+        <td>
+          <div id="outputSymmetrical1" class="stat">〜</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Symmetrical 2</td>
+        <td>
+          <input id="inputSymmetrical2" type="text" maxlength="2" placeholder="{}" style="width: 20px; text-align: center;">
+        </td>
+        <td>
+          <div id="outputSymmetrical2" class="stat">〜</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+  <div class="footer">
+    V1 December 2024<br>
+    @Anton Wörndle
+  </div>
+
+  <!-- JavaScript -->
+  <script src="/js/format.js"></script>
+</body>
+</html>
